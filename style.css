@@ -1,0 +1,67 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background: radial-gradient(circle, #000010, #020f2a);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.planet-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.planet {
+  background: #1c1c2b;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  width: 130px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.planet:hover {
+  transform: scale(1.1);
+}
+
+.planet img {
+  width: 80px;
+  height: 80px;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
